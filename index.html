@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/radioButton.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="assets/img/woman.png" alt="" width="400">
+            <span class="text">hello my&nbsp;friend</span>
+        </div>
+
+        <form id="form" action="#test">
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="text" name="phone" id="phone" placeholder="Номер телефона">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="Пароль" autocomplete="on">
+            </div>
+
+            <div class="radio-group">
+                <div class="radio-button">
+                    <input type="radio" name="love" id="love1">
+                    <label for="love1">Люблю свою работу</label>
+                </div>
+
+                <div class="radio-button">
+                    <input type="radio" name="love" id="love2" checked>
+                    <label for="love2">Очень люблю свою работу</label>
+                </div>
+            </div>
+
+            <button type="submit" id="btn">Отправить анкету</button>
+        </form>
+    </div>
+</body>
+
+<script type="text/javascript" src="assets/js/form.js"></script>
+</html>

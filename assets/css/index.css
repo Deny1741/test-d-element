@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Light", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+body {
+    max-width: 1920px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6%;
+}
+
+.profile {
+    width: 580px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile .text {
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 96px;
+    color: #7D98F7;
+    transform: rotate(-45deg);
+
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    color: #222222;
+    font-weight: 300;
+}
+
+.form-group input {
+    color: #A9A9A9;
+    font-weight: 600;
+    width: 100%;
+    background: #F8F8F8;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 7px 0px 7px 16px;
+    margin-top: 8px;
+}
+
+.radio-group {
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.radio-button input {
+    width: 32px;
+    height: 32px;
+    background: #222222;
+}
+
+button {
+    align-self: end;
+    font-size: 18px;
+    Line-height: 32px;
+    font-weight: 800;
+    color: #FFFFFF;
+    background: #7D98F6;
+    border-radius: 25px;
+    border: none;
+    padding: 12px 32px;
+}
+
+@media (max-width: 1920px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+
+    .profile {
+        width: 435px;
+    }
+
+    .profile .text {
+        font-size: 66px;
+    }
+
+    .profile img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile {
+        width: 340px;
+    }
+
+    .profile .text {
+        font-size: 50px;
+        bottom: 20%;
+        left: 30%;
+        line-height: 70px;
+    }
+
+    .profile img {
+        width: 240px;
+    }
+}
